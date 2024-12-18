@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dependencies">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{70c1e945-76c1-45f2-bc7c-54e70e6b476e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="roblox">
+      <UniqueIdentifier>{433e183b-3400-4095-bafa-91172073c212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="environment">
+      <UniqueIdentifier>{ee9185ac-2965-4007-8524-0317ad9c58c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities\console">
+      <UniqueIdentifier>{fe139061-09df-40d2-a458-2393b0da1749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities\tools">
+      <UniqueIdentifier>{2dd21b0d-12c7-4779-8e5c-4df87205ee4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities\scanner">
+      <UniqueIdentifier>{a44f97f7-1d65-4e7a-8859-127ad2af8af1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\xorstring">
+      <UniqueIdentifier>{eeba3af3-8aec-456c-9251-f949af5f1174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\luau">
+      <UniqueIdentifier>{c64a54c9-54ff-4456-aa08-076e9bb2662d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\luau\ast">
+      <UniqueIdentifier>{5de3bc77-5628-43b7-a3c7-82081ed92658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\luau\vm">
+      <UniqueIdentifier>{a8912be1-64d0-4144-a600-d21033d13a77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\luau\compiler">
+      <UniqueIdentifier>{4bd28750-7348-4872-bf9c-7de1dd39a648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bypasses">
+      <UniqueIdentifier>{5d6a4eee-7b4c-40df-a0bf-3cc548407f98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bypasses\retcheck">
+      <UniqueIdentifier>{c0bdd103-cdf8-4678-b9a4-8a2a6d349e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\taskscheduler">
+      <UniqueIdentifier>{7b3ad33b-2301-478d-b84b-08fd3b162aa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\vfthook">
+      <UniqueIdentifier>{f6faca00-ffc5-43b8-a382-1580155a963e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="environment\custom">
+      <UniqueIdentifier>{eca884f9-f624-4cb1-bd3b-a11bb9819323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="environment\debug">
+      <UniqueIdentifier>{c0ae8182-91c6-40f9-8dad-d7db29d47be8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="environment\drawing">
+      <UniqueIdentifier>{66827a6a-4fbf-4787-a43b-1afa637736d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bypasses\callcheck">
+      <UniqueIdentifier>{cc02d25c-5c0f-45df-b583-797e6f2d3221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bypasses\memcheck">
+      <UniqueIdentifier>{f92ecd9f-cd3f-4992-91ed-09ac7cbee8b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bypasses\trustcheck">
+      <UniqueIdentifier>{0e0358f1-af12-47c7-b081-2b6e043412f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bypasses\callcheck\callcheck.cpp" />
+    <ClCompile Include="bypasses\trustcheck\trustcheck.cpp" />
+    <ClCompile Include="dependencies\renderer\dx11_renderer.cpp" />
+    <ClCompile Include="dependencies\task_scheduler\task_scheduler.cpp" />
+    <ClCompile Include="environment\debug\debug.cpp" />
+    <ClCompile Include="utilities\console_debug\console_dbg.cpp" />
+    <ClCompile Include="utilities\tools\tools.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="dependencies\sha384\sha384.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_demo.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_draw.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_tables.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_tricks.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="dependencies\lz4\lz4.cpp" />
+    <ClCompile Include="dependencies\lz4\lz4hc.cpp" />
+    <ClCompile Include="bypasses\ntqvmcheck\hook.cpp" />
+    <ClCompile Include="environment\connection\connection.cpp" />
+    <ClCompile Include="environment\crypt\crypt.cpp" />
+    <ClCompile Include="environment\custom\custom.cpp" />
+    <ClCompile Include="environment\debug\debug.cpp" />
+    <ClCompile Include="environment\drawing\drawing.cpp" />
+    <ClCompile Include="environment\file\file.cpp" />
+    <ClCompile Include="environment\input\input.cpp" />
+    <ClCompile Include="environment\websocket\websocket.cpp" />
+    <ClCompile Include="dependencies\base64\base64.cpp" />
+    <ClCompile Include="dependencies\vft_hook\vft_hooking.cpp" />
+    <ClCompile Include="environment\console\console.cpp" />
+    <ClCompile Include="bypasses\memcheck\memcheck.cpp" />
+    <ClCompile Include="bypasses\memcheck\utilities.cpp" />
+    <ClCompile Include="utilities\exception_handler\ExceptionHandler.cpp" />
+    <ClCompile Include="dependencies\luau\Compiler\src\BuiltinFolding.cpp" />
+    <ClCompile Include="dependencies\luau\Compiler\src\Builtins.cpp" />
+    <ClCompile Include="dependencies\luau\Compiler\src\BytecodeBuilder.cpp" />
+    <ClCompile Include="dependencies\luau\Compiler\src\Compiler.cpp" />
+    <ClCompile Include="dependencies\luau\Compiler\src\ConstantFolding.cpp" />
+    <ClCompile Include="dependencies\luau\Compiler\src\CostModel.cpp" />
+    <ClCompile Include="dependencies\luau\Compiler\src\lcode.cpp" />
+    <ClCompile Include="dependencies\luau\Compiler\src\TableShape.cpp" />
+    <ClCompile Include="dependencies\luau\Compiler\src\ValueTracking.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\lapi.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\laux.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\lbuiltins.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\ldebug.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\ldo.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\lfunc.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\lgc.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\lgcdebug.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\linit.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\lmem.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\lnumprint.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\lobject.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\lperf.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\lstate.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\lstring.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\ltable.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\ltm.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\ludata.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\lvmexecute.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\lvmload.cpp" />
+    <ClCompile Include="dependencies\luau\VM\src\lvmutils.cpp" />
+    <ClCompile Include="dependencies\luau\Ast\src\Ast.cpp" />
+    <ClCompile Include="dependencies\luau\Ast\src\Confusables.cpp" />
+    <ClCompile Include="dependencies\luau\Ast\src\Lexer.cpp" />
+    <ClCompile Include="dependencies\luau\Ast\src\Location.cpp" />
+    <ClCompile Include="dependencies\luau\Ast\src\Parser.cpp" />
+    <ClCompile Include="dependencies\luau\Ast\src\StringUtils.cpp" />
+    <ClCompile Include="dependencies\luau\Ast\src\TimeTrace.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bypasses\callcheck\callcheck.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="bypasses\trustcheck\trustcheck.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\renderer\dx11_renderer.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\renderer\fonticons_data.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\renderer\fontcustom_data.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\task_scheduler\task_scheduler.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\xorstring\xorstring.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\xxhash\xxhash.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\zstd\zstd.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\debug\debug.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="roblox\config.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="roblox\luavm_secure.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="roblox\offsets.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\console_debug\console_dbg.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\tools\tools.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\sha384\sha384.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imconfig.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imgui.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imgui_impl_dx11.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imgui_impl_win32.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imgui_internal.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imgui_tricks.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imstb_rectpack.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imstb_textedit.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imstb_truetype.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau_decompiler\luaU_decompiler.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\lz4\lz4.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\lz4\lz4hc.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\lz4\lz4hc_encoder.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\lz4\lz4_decoder.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\lz4\lz4_encoder.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="roblox\injection_defs.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\minhook\MinHook.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="bypasses\ntqvmcheck\hook.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\connection\connection.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\crypt\crypt.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\custom\custom.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\debug\debug.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\drawing\drawing.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\file\file.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\input\input.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\websocket\websocket.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\base64\base64.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\vft_hook\vft_hooking.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="environment\console\console.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\tools\http_status_codes.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="bypasses\memcheck\memcheck.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="bypasses\memcheck\utilities.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\exception_handler\ExceptionHandler.hpp">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Compiler\include\luacode.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Compiler\include\Luau\Bytecode.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Compiler\include\Luau\BytecodeBuilder.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Compiler\include\Luau\Compiler.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Compiler\src\BuiltinFolding.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Compiler\src\Builtins.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Compiler\src\ConstantFolding.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Compiler\src\CostModel.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Compiler\src\TableShape.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Compiler\src\ValueTracking.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\include\lua.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\include\luaconf.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\include\lualib.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\lapi.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\lbuiltins.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\lbytecode.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\lcommon.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\ldebug.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\ldo.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\lfunc.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\lgc.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\lmem.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\lnumutils.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\lobject.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\lstate.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\lstring.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\ltable.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\ltm.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\lua.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\luaconf.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\lualib.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\ludata.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\VM\src\lvm.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Ast\include\Luau\Ast.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Ast\include\Luau\Common.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Ast\include\Luau\Confusables.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Ast\include\Luau\DenseHash.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Ast\include\Luau\Lexer.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Ast\include\Luau\Location.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Ast\include\Luau\ParseOptions.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Ast\include\Luau\Parser.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Ast\include\Luau\ParseResult.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Ast\include\Luau\StringUtils.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\luau\Ast\include\Luau\TimeTrace.h">
+      <Filter>dependencies</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="dependencies\minhook\libMinHook.x86.lib" />
+    <Library Include="dependencies\luau_decompiler\luaU_decompiler.lib" />
+  </ItemGroup>
+</Project>
